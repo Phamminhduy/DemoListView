@@ -66,6 +66,7 @@ public class AdapterFlag extends BaseAdapter{
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         viewHolder viewholder = null;
+
         if(view ==null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(layout, null);
@@ -78,9 +79,9 @@ public class AdapterFlag extends BaseAdapter{
             viewholder = (viewHolder)view.getTag();
         }
         ///
-        if(i %2 == 1)
+        if(i%2 ==0)//if(i%2==1)thì bắt đầu từ vị trí thứ 2 trong Ui
         {
-            view.setBackgroundColor(Color.GREEN);//item vi tri chan
+            view.setBackgroundColor(Color.GREEN);//item vi tri chan bat dau tu 0 trong ListView
         }
         else
         {

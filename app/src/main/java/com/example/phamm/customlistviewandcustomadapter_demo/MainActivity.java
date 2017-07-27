@@ -10,7 +10,6 @@ public class MainActivity extends AppCompatActivity {
     ListView listView;
     ArrayList<FlagFootball> arrayList;
     AdapterFlag adapterFlag;
-    private static int save = -1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
